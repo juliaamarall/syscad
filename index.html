@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img/Picol-Picol-User-Close-Settings.16.png" type="image/x-icon">
+</head>
+<body>
+    <header class="container">
+        <nav class="logo">
+            <a href="#" onclick="abrirmenu()" > <p id="simbolo">&#9776;</p> <p id="sys">SYSCAD</p></a>
+        </nav>
+        
+            <section class="flex-item">
+                <img src="img/ícone-do-usuário-do-vetor-7337510-removebg-preview.png" alt="usuario" class="usuario">
+                <p>Fulano junior</p>
+            </section>
+    </header>
+    <nav id="menulateral">
+        <a href="#"  onclick="fecharmenu()" id="twogrupo"><p>&times; Fechar</p></a>
+        <a href="#" id="onegrupo"><img src="img/ícone-do-usuário-do-vetor-7337510-removebg-preview.png" width="40"> <p>Fulano Junior</p></a>
+        <span id="green-on"><i class="fa fa-circle"></i>  <p id="on
+            ">online</p></span>
+        <a href="#" id="usu-menu"><img src="img/usuarios-removebg-preview.png" class="usuario "> <p>Usuários</p></a>
+    </nav>
+    <main id="principal">
+        <div id="frente">
+            <h1>Usuários <span>Gerenciamento de usuários do sistema</span></h1>
+        </div>
+
+        <div id="esquerda-home">
+            <img src="img/home.png" alt="home" id="home">
+            <p class="branco"><a href="#"><strong>Home >
+            </strong></a></p>
+            <p class="branco"><a href="#"><strong>Usuários</strong></a></p>
+            
+        </div>
+
+        <div  id="tabela01">
+            <table>
+                    <caption id="tabela"><strong>Lista de usuários</strong></caption>
+                <thead>
+                    <th>Foto</th>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Admin</th>
+                    <th>Criado em</th>
+                    <th>Ações</th>
+                </thead>
+    
+                <tbody>
+                    <tr>
+                        <td> <img src="img/ícone-do-usuário-do-vetor-7337510-removebg-preview.png" alt="" class="tabelausu"></td>
+                        <td>Felipe Morais</td>
+                        <td>felipemorais@gmail.com</td>
+                        <td>Sim</td>
+                        <td>02/04/2018</td>
+                        <td> <input type="submit" class="azul">
+                            <button class="red">Excluir</button></td>
+                    </tr>
+                    
+                    <tr>
+                        <td> <img src="img/ícone-do-usuário-do-vetor-7337510-removebg-preview.png" alt="" class="tabelausu"></td>
+                        <td>Gabriel Nobre</td>
+                        <td>gabrielnobre@gmail.com</td>
+                        <td>Sim</td>
+                        <td>02/04/2018</td>
+                        <td> <input type="submit" class="azul">
+                            <button class="red">Excluir</button></td>
+                    </tr>
+    
+                    <tr>
+                        <td> <img src="img/ícone-do-usuário-do-vetor-7337510-removebg-preview.png" alt="" class="tabelausu"></td>
+                        <td>Samara Oliveira</td>
+                        <td>samaraoliveira@gmail.com</td>
+                        <td>Sim</td>
+                        <td>02/04/2018</td>
+                        <td> <input type="submit" class="azul">
+                            <button class="red">Excluir</button></td>
+                    </tr>
+    
+                   
+                </tbody>
+            </table>
+        </div>
+        
+        <div id="area-lateral">
+
+        <section class="cards">
+            <div id="verde">
+              <h2>44</h2>
+              <p>Novos Usuários</p>
+            
+            </div>
+            <div id="amarelo">
+               <h2>15</h2>
+               <p>Administradores</p>
+              
+            </div>
+        </section>
+
+        <section id="formulario">
+            <form action=" ">
+                
+                    <legend> <strong>Novo Usuário</strong></legend>
+                    <br>
+                    <div class="inputbox">
+                        <label for="nome" class="user" class="labelinput"> Nome</label>
+                        <input type="text" name="nome" id="nome" class="inputuser" required>
+                       
+                    </div>
+<br><br>
+                    <div class="inputbox">
+                        <p class="inputuser">Gênero</p>
+                        <input type="radio" id="feminino" name="genero" value="feminino" required>
+                        <label for="feminino" class="inputuser">Feminino</label>
+                        <br>
+                        <input type="radio" id="masculino" name="genero" value="masculino" required>
+                        <label for="masculino" class="inputuser">Masculino</label>
+                    </div>
+                    <br><br>
+                    <div class="inputbox">
+                        <label for="data_nascimento" > Nascimento</label>
+                        <input type="date" name="data_nascimento" id="data" class="inputuser" required>
+                        
+                    </div>
+                    <br><br>
+                    <div class="inputbox">
+                        <label for="nome" class="user"  class="labelinput"> País</label>
+                        <input type="text" name="pais" id="pais" class="inputuser" required>
+                      
+                    </div>
+                    <br>
+                    <div class="inputbox">
+                        <label for="email" class="user"  class="labelinput"> Email</label>
+                        <input type="text" name="email" id="email" class="inputuser" required>
+                       
+                    </div>
+                    <br><br>
+                    <div class="inputbox">
+                        <label for="senha" class="user"  class="labelinput" > Senha</label>
+                        <input type="text" name="senha" id="senha" class="inputuser" required>
+                        
+                    </div>
+                    <br><br>
+                    <div class="inputbox">
+                        <label> Foto</label> <br>
+                        <input type="file">
+                    </div>
+
+                    <div class="inputbox">
+                        <input type="checkbox">
+                        <label for=""> Administrador</label>
+                    </div>
+                    <input type="submit" name="submit" class="azul" id="botao-enviar"> 
+            </form>
+
+        </section>
+    </div>
+    <footer> 
+        <p>Desenvolvido por Julia Amaral </p>
+    </footer>
+
+
+
+
+    </main>
+    <script>
+    function abrirmenu(){
+        document.getElementById('menulateral').style.width= '250px';
+        document.getElementById('principal').style.marginLeft = '250px';
+        document.getElementById('area-lateral').style.marginLeft = '50px'
+    }
+
+    function fecharmenu(){
+        document.getElementById('menulateral').style.width= '0px';
+        document.getElementById('principal').style.marginLeft = '0px';
+        document.getElementById('area-lateral').style.marginLeft = '0px'
+    }
+
+    </script>
+
+        
+</body>
+</html>
